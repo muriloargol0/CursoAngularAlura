@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     PhotosModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
