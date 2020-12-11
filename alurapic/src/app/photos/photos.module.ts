@@ -1,28 +1,16 @@
-import { FilterByDescription } from './photo-list/filter-by-description.pipe';
+import { CardModule } from './../shared/components/card/card.module';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { PhotoListModule } from './photo-list/photo-list.module';
+import { PhotoFormModule } from './photo-form/photo-form.module';
+import { PhotoModule } from './photo/photo.module';
 import { NgModule } from '@angular/core';
-
-import { PhotoComponent } from './photo/photo.component';
-import { PhotoFormComponent } from './photo-form/photo-form.component';
-import { PhotosComponent } from './photo-list/photos/photos.component';
 import { PhotoListComponent } from './photo-list/photo-list.component';
 
 @NgModule({
-    declarations: [
-        PhotoComponent,
-        PhotoFormComponent,
-        PhotosComponent,
-        PhotoListComponent,
-        FilterByDescription
-    ],
     imports: [ 
-        HttpClientModule,
-        CommonModule
-    ],
-    exports: [
-        PhotoListComponent
+        PhotoModule,
+        PhotoFormModule,
+        PhotoListModule
     ]
 })
-
 export class PhotosModule {}
