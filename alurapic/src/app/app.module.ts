@@ -1,10 +1,10 @@
+import { HomeModule } from './home/home.module';
+import { ErrorsModule } from './errors/errors.module';
 import { PhotosModule } from './photos/photos.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardComponent } from './shared/components/card/card.component';
-
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { CardComponent } from './shared/components/card/card.component';
     BrowserModule,
     AppRoutingModule,
     PhotosModule,
-    AppRoutingModule
+    ErrorsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
