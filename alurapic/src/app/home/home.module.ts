@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { VmessageModule } from './../shared/components/vmessage/vmessage.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
@@ -10,7 +11,8 @@ import { SignInComponent } from "./signin/signin.component";
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        VmessageModule
+        VmessageModule,
+        RouterModule
     ]
 })
 export class HomeModule{}
